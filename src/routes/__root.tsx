@@ -82,6 +82,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Lumina" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Lumina — Cloud-native technology partner" },
+      { name: "twitter:title", content: "Lumina — Cloud-native technology partner" },
+      { property: "og:description", content: "Lumina helps businesses transform, modernize, and scale with cloud migration, application development, and data analytics." },
+      { name: "twitter:description", content: "Lumina helps businesses transform, modernize, and scale with cloud migration, application development, and data analytics." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/yHTRHvg44kgCA2m8Aga8CW6cFQw1/social-images/social-1782398112191-LUMINA_DP_LOGO.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/yHTRHvg44kgCA2m8Aga8CW6cFQw1/social-images/social-1782398112191-LUMINA_DP_LOGO.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
