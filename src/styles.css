@@ -42,42 +42,47 @@
 :root {
   --radius: 0.875rem;
 
-  /* Lumina — deep midnight with luminous cyan and warm ember accents */
-  --background: oklch(0.14 0.02 250);
-  --foreground: oklch(0.96 0.01 95);
+  /* Lumina — deep indigo night with violet + magenta from the logo */
+  --background: oklch(0.14 0.04 285);
+  --foreground: oklch(0.97 0.01 300);
 
-  --card: oklch(0.18 0.025 250);
-  --card-foreground: oklch(0.96 0.01 95);
+  --card: oklch(0.19 0.05 285);
+  --card-foreground: oklch(0.97 0.01 300);
 
-  --popover: oklch(0.18 0.025 250);
-  --popover-foreground: oklch(0.96 0.01 95);
+  --popover: oklch(0.19 0.05 285);
+  --popover-foreground: oklch(0.97 0.01 300);
 
-  --primary: oklch(0.82 0.14 220);          /* luminous cyan */
-  --primary-foreground: oklch(0.14 0.02 250);
+  --primary: oklch(0.62 0.24 295);           /* violet from logo */
+  --primary-foreground: oklch(0.98 0.01 300);
 
-  --secondary: oklch(0.24 0.03 250);
-  --secondary-foreground: oklch(0.96 0.01 95);
+  --secondary: oklch(0.26 0.06 285);
+  --secondary-foreground: oklch(0.97 0.01 300);
 
-  --muted: oklch(0.22 0.025 250);
-  --muted-foreground: oklch(0.72 0.02 240);
+  --muted: oklch(0.24 0.05 285);
+  --muted-foreground: oklch(0.75 0.03 295);
 
-  --accent: oklch(0.78 0.16 65);            /* warm ember/gold */
-  --accent-foreground: oklch(0.14 0.02 250);
+  --accent: oklch(0.68 0.28 340);            /* magenta from logo */
+  --accent-foreground: oklch(0.98 0.01 300);
 
   --destructive: oklch(0.62 0.22 25);
   --destructive-foreground: oklch(0.98 0 0);
 
-  --border: oklch(1 0 0 / 0.08);
+  --border: oklch(1 0 0 / 0.09);
   --input: oklch(1 0 0 / 0.12);
-  --ring: oklch(0.82 0.14 220);
+  --ring: oklch(0.62 0.24 295);
 
-  --glow: oklch(0.82 0.14 220);
-  --ember: oklch(0.78 0.16 65);
+  --glow: oklch(0.65 0.26 300);
+  --ember: oklch(0.68 0.28 340);
 }
 
 .dark {
-  --background: oklch(0.14 0.02 250);
-  --foreground: oklch(0.96 0.01 95);
+  --background: oklch(0.14 0.04 285);
+  --foreground: oklch(0.97 0.01 300);
+}
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 @layer base {
@@ -98,10 +103,14 @@
 }
 
 @utility gradient-text {
-  background: linear-gradient(110deg, var(--ember) 0%, var(--foreground) 40%, var(--glow) 100%);
+  background: linear-gradient(110deg, var(--ember) 0%, var(--foreground) 45%, var(--glow) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+@utility gradient-brand {
+  background: linear-gradient(135deg, oklch(0.55 0.25 265) 0%, var(--primary) 45%, var(--accent) 100%);
 }
 
 @utility ring-glow {

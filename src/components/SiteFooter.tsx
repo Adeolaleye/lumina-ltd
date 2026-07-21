@@ -1,23 +1,21 @@
 import { Link } from "@tanstack/react-router";
+import logo from "../assets/lumina-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
     <footer className="relative mt-32 border-t border-border/60">
       <div className="absolute inset-x-0 top-0 -translate-y-1/2">
-        <div className="mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+        <div className="mx-auto h-px max-w-3xl bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
       </div>
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-2.5 font-display text-2xl">
-            <span className="relative inline-flex h-7 w-7 items-center justify-center">
-              <span className="absolute inset-0 rounded-full bg-primary/30 blur-md" />
-              <span className="relative h-3 w-3 rounded-full bg-primary ring-4 ring-primary/20" />
-            </span>
+            <img src={logo.url} alt="Lumina logo" className="h-9 w-9 rounded-full" />
             Lumina
           </Link>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Cloud-native technology partner illuminating the path to modern, secure, intelligent
-            applications.
+            Cloud-native technology partner helping organizations modernize, secure, and scale — with
+            digital transformation delivered across Nigeria and beyond.
           </p>
         </div>
         <div>
@@ -35,7 +33,11 @@ export function SiteFooter() {
             Contact
           </p>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li>hello@luminalabs.io</li>
+            <li>
+              <a href="mailto:contact@luminalabsltd.com" className="hover:text-foreground">
+                contact@luminalabsltd.com
+              </a>
+            </li>
             <li>Lumina Labs Limited</li>
           </ul>
         </div>

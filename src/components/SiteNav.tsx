@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "../assets/lumina-logo.png.asset.json";
 
 const links = [
   { to: "/", label: "Home" },
@@ -15,9 +16,9 @@ export function SiteNav() {
     <header className="fixed top-0 z-50 w-full">
       <div className="mx-auto mt-4 flex max-w-7xl items-center justify-between rounded-2xl border border-border/60 bg-background/60 px-5 py-3 backdrop-blur-xl md:mt-6">
         <Link to="/" className="flex items-center gap-2.5 font-display text-xl">
-          <span className="relative inline-flex h-7 w-7 items-center justify-center">
+          <span className="relative inline-flex h-9 w-9 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-primary/30 blur-md" />
-            <span className="relative h-3 w-3 rounded-full bg-primary ring-4 ring-primary/20" />
+            <img src={logo.url} alt="Lumina logo" className="relative h-9 w-9 rounded-full" />
           </span>
           <span className="tracking-tight">Lumina</span>
         </Link>
@@ -38,7 +39,7 @@ export function SiteNav() {
 
         <Link
           to="/contact"
-          className="hidden rounded-xl bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-shadow hover:shadow-glow md:inline-flex"
+          className="hidden rounded-xl gradient-brand px-4 py-2 text-sm font-medium text-primary-foreground transition-shadow hover:shadow-glow md:inline-flex"
         >
           Start a project
         </Link>
@@ -70,7 +71,7 @@ export function SiteNav() {
             <Link
               to="/contact"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-lg bg-primary px-3 py-2.5 text-center text-sm font-medium text-primary-foreground"
+              className="mt-2 rounded-lg gradient-brand px-3 py-2.5 text-center text-sm font-medium text-primary-foreground"
             >
               Start a project
             </Link>
