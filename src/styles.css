@@ -103,15 +103,16 @@ html { scroll-behavior: smooth; }
 }
 
 @utility gradient-text {
-  background: linear-gradient(110deg, var(--ember) 0%, var(--foreground) 45%, var(--glow) 100%);
+  background: linear-gradient(110deg, var(--primary) 0%, var(--foreground) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 @utility gradient-brand {
-  background: linear-gradient(135deg, oklch(0.55 0.25 265) 0%, var(--primary) 45%, var(--accent) 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, color-mix(in oklab, var(--primary) 70%, var(--accent)) 100%);
 }
+
 
 @utility ring-glow {
   box-shadow: var(--shadow-glow);
