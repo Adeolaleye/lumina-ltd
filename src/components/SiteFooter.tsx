@@ -10,9 +10,12 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-2.5 font-display text-2xl">
-            <img src={logo.url} alt="Lumina logo" className="h-9 w-9 rounded-full" />
+            <span className="inline-flex h-9 w-9 overflow-hidden rounded-full">
+              <img src={logo.url} alt="Lumina logo" className="h-9 w-9 scale-[1.35] rounded-full object-cover" />
+            </span>
             Lumina
           </Link>
+
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             Cloud-native technology partner helping organizations modernize, secure, and scale — with
             digital transformation delivered across Nigeria and beyond.
