@@ -54,8 +54,9 @@ function Home() {
       <section className="relative isolate -mt-24 flex min-h-[100svh] items-center overflow-hidden pt-24">
         <LuminaCanvas className="absolute inset-0 h-full w-full" />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/40 via-background/70 to-background" />
-        <div className="absolute left-1/2 top-0 -z-10 h-[600px] w-[800px] -translate-x-1/2 rounded-full bg-primary/15 blur-[120px]" />
-        <div className="pointer-events-none absolute -bottom-32 right-0 -z-10 h-[500px] w-[500px] rounded-full bg-accent/15 blur-[120px]" />
+        <div className="absolute left-1/2 top-0 -z-10 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-primary/8 blur-[140px]" />
+        <div className="pointer-events-none absolute -bottom-32 right-0 -z-10 h-[400px] w-[400px] rounded-full bg-accent/6 blur-[140px]" />
+
 
         <div className="relative mx-auto w-full max-w-7xl px-6">
           <motion.div
@@ -186,7 +187,7 @@ function Home() {
         <div className="grid gap-8 md:grid-cols-2">
           <FadeIn>
             <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-10">
-              <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/25 blur-3xl" />
+              <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
               <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Mission</p>
               <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
                 Empower digital transformation through innovative cloud solutions — delivering
@@ -197,7 +198,8 @@ function Home() {
           </FadeIn>
           <FadeIn delay={0.1}>
             <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-10">
-              <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/25 blur-3xl" />
+              <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
+
               <p className="font-display text-sm uppercase tracking-[0.3em] text-accent">Vision</p>
               <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
                 To be the leading cloud technology partner — harnessing light-speed technology,
