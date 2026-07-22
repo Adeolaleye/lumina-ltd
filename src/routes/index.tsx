@@ -143,10 +143,9 @@ function Home() {
                     height={768}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-card/80 to-transparent" />
-                  <s.icon className="absolute bottom-4 left-4 h-6 w-6 text-primary-foreground/90" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+                  <s.icon className="absolute bottom-4 left-4 h-7 w-7 text-primary-foreground drop-shadow-[0_0_12px_var(--glow)]" />
                 </div>
-
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="text-lg font-medium">{s.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
