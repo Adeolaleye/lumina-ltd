@@ -18,6 +18,7 @@ export function LuminaCanvas({ className = "" }: { className?: string }) {
     let h = 0;
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const mouse = { x: -9999, y: -9999, active: false };
+    const isDark = () => document.documentElement.classList.contains("dark");
 
     type P = { x: number; y: number; vx: number; vy: number; r: number; hue: number };
     let particles: P[] = [];
@@ -36,7 +37,7 @@ export function LuminaCanvas({ className = "" }: { className?: string }) {
         vx: (Math.random() - 0.5) * 0.25,
         vy: (Math.random() - 0.5) * 0.25,
         r: Math.random() * 1.6 + 0.4,
-        hue: Math.random() > 0.7 ? 40 : 200, // ember or cyan
+        hue: Math.random() > 0.6 ? 1 : 0, // 0 = violet, 1 = magenta
       }));
     };
 
@@ -50,18 +51,22 @@ export function LuminaCanvas({ className = "" }: { className?: string }) {
 
     const render = () => {
       ctx.clearRect(0, 0, w, h);
+      const dark = isDark();
+      const violet = dark ? "140, 120, 255" : "90, 50, 200";
+      const magenta = dark ? "230, 130, 220" : "190, 40, 150";
+      const dotAlpha = dark ? 0.9 : 0.85;
+      const haloAlpha = dark ? 0.08 : 0.06;
+      const lineAlpha = dark ? 0.18 : 0.32;
 
-      // soft ambient glow following cursor
       if (mouse.active) {
         const g = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, 220);
-        g.addColorStop(0, "rgba(120, 200, 255, 0.18)");
-        g.addColorStop(1, "rgba(120, 200, 255, 0)");
+        g.addColorStop(0, `rgba(${violet}, ${dark ? 0.18 : 0.14})`);
+        g.addColorStop(1, `rgba(${violet}, 0)`);
         ctx.fillStyle = g;
         ctx.fillRect(0, 0, w, h);
       }
 
       for (const p of particles) {
-        // attract toward cursor
         if (mouse.active) {
           const dx = mouse.x - p.x;
           const dy = mouse.y - p.y;
@@ -81,18 +86,17 @@ export function LuminaCanvas({ className = "" }: { className?: string }) {
         if (p.y < 0) p.y += h;
         if (p.y > h) p.y -= h;
 
-        const color = p.hue === 40 ? "rgba(255, 190, 110," : "rgba(140, 210, 255,";
+        const color = p.hue === 1 ? magenta : violet;
         ctx.beginPath();
-        ctx.fillStyle = color + " 0.9)";
+        ctx.fillStyle = `rgba(${color}, ${dotAlpha})`;
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
         ctx.beginPath();
-        ctx.fillStyle = color + " 0.08)";
+        ctx.fillStyle = `rgba(${color}, ${haloAlpha})`;
         ctx.arc(p.x, p.y, p.r * 6, 0, Math.PI * 2);
         ctx.fill();
       }
 
-      // connecting lines
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i];
@@ -101,9 +105,9 @@ export function LuminaCanvas({ className = "" }: { className?: string }) {
           const dy = a.y - b.y;
           const d2 = dx * dx + dy * dy;
           if (d2 < 14000) {
-            const alpha = (1 - d2 / 14000) * 0.18;
-            ctx.strokeStyle = `rgba(140, 210, 255, ${alpha})`;
-            ctx.lineWidth = 0.6;
+            const alpha = (1 - d2 / 14000) * lineAlpha;
+            ctx.strokeStyle = `rgba(${violet}, ${alpha})`;
+            ctx.lineWidth = 0.7;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
             ctx.lineTo(b.x, b.y);
