@@ -24,7 +24,7 @@ function ContactPage() {
     <section className="relative mx-auto max-w-7xl px-6 pb-24 pt-12">
       <div className="grid gap-16 md:grid-cols-2">
         <FadeIn>
-          <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Contact</p>
+          <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">Contact</p>
           <h1 className="mt-4 font-display text-5xl leading-[1.05] md:text-7xl">
             Let's build what's next.
           </h1>
