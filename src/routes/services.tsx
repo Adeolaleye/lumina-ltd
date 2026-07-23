@@ -67,7 +67,7 @@ function ServicesPage() {
     <>
       <section className="relative mx-auto max-w-7xl px-6 pb-16 pt-12">
         <FadeIn>
-          <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">Our Work</p>
+          <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Our Work</p>
           <h1 className="mt-4 max-w-3xl font-display text-5xl leading-[1.05] md:text-7xl">
             Cloud capabilities,
             <br />
@@ -121,7 +121,7 @@ function ServicesPage() {
 
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <FadeIn>
-          <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">How we work</p>
+          <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">How we work</p>
           <h2 className="mt-4 font-display text-4xl md:text-5xl">
             Assess → Migrate → Modernize → Secure → Empower
           </h2>
