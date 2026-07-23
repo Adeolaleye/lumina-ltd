@@ -106,7 +106,7 @@ function Home() {
         <FadeIn>
           <div className="grid gap-12 md:grid-cols-12 md:items-end">
             <div className="md:col-span-7">
-              <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">Who we are</p>
+              <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Who we are</p>
               <h2 className="mt-4 font-display text-4xl md:text-5xl">
                 A cloud-native partner for the next era of business.
               </h2>
@@ -143,10 +143,9 @@ function Home() {
                     height={768}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-card/40 to-transparent" />
-                  <s.icon className="absolute bottom-4 left-4 h-6 w-6 text-foreground/90" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
+                  <s.icon className="absolute bottom-4 left-4 h-7 w-7 text-primary-foreground drop-shadow-[0_0_12px_var(--glow)]" />
                 </div>
-
                 <div className="flex flex-1 flex-col p-6">
                   <h3 className="text-lg font-medium">{s.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
@@ -160,7 +159,7 @@ function Home() {
       {/* HOW WE WORK */}
       <section className="relative mx-auto max-w-7xl px-6 py-24">
         <FadeIn>
-          <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">How we work</p>
+          <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">How we work</p>
           <h2 className="mt-4 font-display text-4xl md:text-5xl">
             Assess → Migrate → Modernize → Secure → Empower
           </h2>
@@ -189,7 +188,7 @@ function Home() {
           <FadeIn>
             <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-10">
               <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
-              <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">Mission</p>
+              <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Mission</p>
               <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
                 Empower digital transformation through innovative cloud solutions — delivering
                 scalable, secure, and intelligent applications that illuminate the future of our
@@ -201,7 +200,7 @@ function Home() {
             <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-10">
               <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl" />
 
-              <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-accent">Vision</p>
+              <p className="font-display text-sm uppercase tracking-[0.3em] text-accent">Vision</p>
               <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
                 To be the leading cloud technology partner — harnessing light-speed technology,
                 limitless possibilities, and a passion for excellence to drive innovation worldwide.
@@ -215,7 +214,7 @@ function Home() {
       <section className="relative mx-auto max-w-7xl px-6 py-24">
         <FadeIn>
           <div className="mb-12 max-w-2xl">
-            <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">Core values</p>
+            <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Core values</p>
             <h2 className="mt-4 font-display text-4xl md:text-5xl">The principles that guide us.</h2>
           </div>
         </FadeIn>
