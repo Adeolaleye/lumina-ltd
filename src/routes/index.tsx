@@ -53,7 +53,7 @@ function Home() {
       {/* HERO */}
       <section className="relative isolate -mt-24 flex min-h-[100svh] items-center overflow-hidden pt-24">
         <LuminaCanvas className="absolute inset-0 h-full w-full" />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/40 via-background/70 to-background" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/20 via-background/40 to-background/80" />
         <div className="absolute left-1/2 top-0 -z-10 h-[500px] w-[700px] -translate-x-1/2 rounded-full bg-primary/8 blur-[140px]" />
         <div className="pointer-events-none absolute -bottom-32 right-0 -z-10 h-[400px] w-[400px] rounded-full bg-accent/6 blur-[140px]" />
 
@@ -143,8 +143,8 @@ function Home() {
                     height={768}
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-card/80 to-transparent" />
-                  <s.icon className="absolute bottom-4 left-4 h-6 w-6 text-primary-foreground/90" />
+                  <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-card/40 to-transparent" />
+                  <s.icon className="absolute bottom-4 left-4 h-6 w-6 text-foreground/90" />
                 </div>
 
                 <div className="flex flex-1 flex-col p-6">
@@ -244,7 +244,7 @@ function Home() {
               height={1200}
               className="absolute inset-0 h-full w-full object-cover opacity-30"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-r from-card via-card/85 to-card/40" />
             <div className="relative grid gap-8 p-10 md:grid-cols-2 md:items-center md:p-16">
               <div>
                 <h2 className="font-display text-4xl md:text-5xl">
