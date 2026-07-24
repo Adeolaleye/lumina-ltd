@@ -10,9 +10,9 @@ import svcConsulting from "../assets/svc-consulting.jpg";
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Cloud Migration, Security, DevOps | Lumina" },
+      { title: "Services - Cloud Migration, Security, DevOps | Lumina" },
       { name: "description", content: "Cloud migration company delivering cloud-native solutions, infrastructure modernization, cloud security services, IT consulting, ICT training, DevOps, and scalable cloud architecture." },
-      { property: "og:title", content: "Services — Lumina" },
+      { property: "og:title", content: "Services - Lumina" },
       { property: "og:description", content: "Cloud migration, cloud-native development, IT security, ICT capacity building, and IT consulting from Lumina." },
       { property: "og:url", content: "/services" },
     ],
@@ -31,7 +31,7 @@ const services = [
   {
     image: svcAppdev,
     title: "Cloud-Native Application Development",
-    body: "We design and build applications that are cloud-native from day one — scalable, resilient, and easy to maintain across their entire lifecycle.",
+    body: "We design and build applications that are cloud-native from day one - scalable, resilient, and easy to maintain across their entire lifecycle.",
     points: ["Microservices", "Serverless", "CI/CD pipelines", "DevOps practices"],
   },
   {

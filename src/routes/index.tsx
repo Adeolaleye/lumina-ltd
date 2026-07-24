@@ -13,10 +13,10 @@ import svcConsulting from "../assets/svc-consulting.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lumina — Cloud Migration & Cloud-Native Solutions" },
+      { title: "Lumina - Cloud Migration & Cloud-Native Solutions" },
       { name: "description", content: "Lumina is a cloud migration company delivering cloud-native solutions, infrastructure modernization, cloud security services, DevOps, ICT training, and digital transformation across Nigeria and beyond." },
-      { property: "og:title", content: "Lumina — Cloud Migration & Cloud-Native Solutions" },
-      { property: "og:description", content: "Cloud migration, cloud-native application development, IT security, ICT capacity building, and IT consulting — built to scale." },
+      { property: "og:title", content: "Lumina - Cloud Migration & Cloud-Native Solutions" },
+      { property: "og:description", content: "Cloud migration, cloud-native application development, IT security, ICT capacity building, and IT consulting - built to scale." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 });
 
 const services = [
-  { icon: Cloud, image: svcMigration, title: "Cloud Migration & Modernization", body: "Move workloads to the cloud with minimal downtime — then modernize for scale, speed, and cost." },
+  { icon: Cloud, image: svcMigration, title: "Cloud Migration & Modernization", body: "Move workloads to the cloud with minimal downtime - then modernize for scale, speed, and cost." },
   { icon: Code2, image: svcAppdev, title: "Cloud-Native Application Development", body: "Microservices, serverless, and DevOps pipelines built for the cloud from day one." },
   { icon: Shield, image: svcSecurity, title: "IT Security & Compliance", body: "Cloud security architecture, IAM, threat monitoring, and continuous compliance built in." },
   { icon: GraduationCap, image: svcTraining, title: "ICT Capacity Building", body: "Workshops, certifications support, and knowledge transfer so your team can own the cloud." },
@@ -190,7 +190,7 @@ function Home() {
               <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-primary/10 blur-3xl" />
               <p className="font-display text-sm uppercase tracking-[0.3em] text-primary">Mission</p>
               <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
-                Empower digital transformation through innovative cloud solutions — delivering
+                Empower digital transformation through innovative cloud solutions - delivering
                 scalable, secure, and intelligent applications that illuminate the future of our
                 clients.
               </p>
@@ -202,7 +202,7 @@ function Home() {
 
               <p className="font-display text-sm uppercase tracking-[0.3em] text-accent">Vision</p>
               <p className="mt-6 font-display text-2xl leading-snug md:text-3xl">
-                To be the leading cloud technology partner — harnessing light-speed technology,
+                To be the leading cloud technology partner - harnessing light-speed technology,
                 limitless possibilities, and a passion for excellence to drive innovation worldwide.
               </p>
             </div>
