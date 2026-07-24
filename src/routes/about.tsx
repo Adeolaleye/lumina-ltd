@@ -3,9 +3,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Lumina" },
+      { title: "About - Lumina" },
       { name: "description", content: "Lumina is a cloud-native technology company empowering digital transformation through innovative, secure, and intelligent applications." },
-      { property: "og:title", content: "About — Lumina" },
+      { property: "og:title", content: "About - Lumina" },
       { property: "og:description", content: "Our mission, vision, and the values that guide how we build with our clients." },
       { property: "og:url", content: "/about" },
     ],
@@ -33,7 +33,7 @@ function AboutPage() {
           Lumina Labs is a cloud-native technology company that empowers businesses to transform,
           modernize, and scale their applications and data with cutting-edge cloud solutions. We
           specialize in cloud migration, application development, data analytics, and digital
-          transformation — helping our clients unlock the full potential of their digital assets.
+          transformation - helping our clients unlock the full potential of their digital assets.
         </p>
       </section>
 

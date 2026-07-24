@@ -17,7 +17,7 @@ export function SiteFooter() {
           </Link>
 
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Cloud-native technology partner helping organizations modernize, secure, and scale — with
+            Cloud-native technology partner helping organizations modernize, secure, and scale - with
             digital transformation delivered across Nigeria and beyond.
           </p>
         </div>

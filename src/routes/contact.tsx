@@ -6,9 +6,9 @@ import { FadeIn } from "../components/FadeIn";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Lumina" },
+      { title: "Contact - Lumina" },
       { name: "description", content: "Talk to Lumina about cloud migration, cloud-native development, IT security, ICT training, and consulting. Email contact@luminalabsltd.com." },
-      { property: "og:title", content: "Contact — Lumina" },
+      { property: "og:title", content: "Contact - Lumina" },
       { property: "og:description", content: "Start a conversation with Lumina about your cloud transformation." },
       { property: "og:url", content: "/contact" },
     ],
@@ -68,7 +68,7 @@ function ContactPage() {
                   </div>
                   <h2 className="font-display text-2xl">Message received.</h2>
                   <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-                    Thanks for reaching out — we'll be in touch shortly to discuss next steps.
+                    Thanks for reaching out - we'll be in touch shortly to discuss next steps.
                   </p>
                 </div>
               ) : (

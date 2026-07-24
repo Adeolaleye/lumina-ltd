@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 
 /**
  * Interactive particle field that reacts to cursor movement.
- * Pure presentation — canvas + requestAnimationFrame.
+ * Pure presentation - canvas + requestAnimationFrame.
  */
 export function LuminaCanvas({ className = "" }: { className?: string }) {
   const ref = useRef<HTMLCanvasElement | null>(null);
