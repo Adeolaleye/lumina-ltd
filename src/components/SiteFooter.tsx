@@ -10,8 +10,8 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-3 font-display text-2xl">
-            <span className="inline-flex h-14 w-14 items-center justify-center">
-              <img src={logo.url} alt="Lumina logo" className="h-14 w-14 object-contain" />
+            <span className="inline-flex h-20 w-20 items-center justify-center">
+              <img src={logo.url} alt="Lumina logo" className="h-20 w-20 object-contain" />
             </span>
             Lumina
           </Link>
