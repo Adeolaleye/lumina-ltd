@@ -21,7 +21,7 @@ function ContactPage() {
   const [sent, setSent] = useState(false);
 
   return (
-    <section className="relative mx-auto max-w-7xl px-6 pb-24 pt-12">
+    <section className="relative mx-auto max-w-7xl px-6 pb-10 pt-12">
       <div className="grid gap-16 md:grid-cols-2">
         <FadeIn>
           <p className="font-sans text-sm font-bold uppercase tracking-[0.22em] text-primary">Contact</p>
