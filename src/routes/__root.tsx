@@ -132,7 +132,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <div className="relative min-h-screen overflow-x-hidden bg-background text-foreground">
         <SiteNav />
-        <main className="pt-24">
+        <main className="pt-20">
           <Outlet />
         </main>
         <SiteFooter />

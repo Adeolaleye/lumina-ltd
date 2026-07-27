@@ -232,7 +232,7 @@ function Home() {
       </section>
 
       {/* CTA */}
-      <section className="relative mx-auto max-w-7xl px-6 py-24">
+      <section className="relative mx-auto max-w-7xl px-6 pb-8 pt-12">
         <FadeIn>
           <div className="relative overflow-hidden rounded-[2rem] border border-border/60 bg-card">
             <img
