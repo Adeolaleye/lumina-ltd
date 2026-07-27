@@ -17,7 +17,7 @@ export function SiteNav() {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed top-0 z-50 w-full">
-      <div className="mx-auto mt-2 flex max-w-7xl items-center justify-between rounded-2xl border border-border/60 bg-background/60 px-5 py-1 backdrop-blur-xl md:mt-3">
+      <div className="mx-auto mt-1 flex max-w-7xl items-center justify-between rounded-2xl border border-border/60 bg-background/60 px-5 py-0.5 backdrop-blur-xl md:mt-1.5">
         <Link to="/" className="flex items-center gap-3 font-display text-xl">
           <span className="relative inline-flex h-20 w-20 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-primary/20 blur-md" />
