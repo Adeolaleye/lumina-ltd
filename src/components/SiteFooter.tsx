@@ -57,7 +57,7 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               className="hover:text-foreground"
             >
-              consode
+              Consode
             </a>
           </p>
         </div>
