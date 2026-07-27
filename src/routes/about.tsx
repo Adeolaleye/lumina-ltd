@@ -76,8 +76,8 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <div className="rounded-[2rem] border border-border/60 bg-card p-10 md:p-16">
+      <section className="mx-auto max-w-7xl px-6 pb-10 pt-8">
+        <div className="rounded-[2rem] border border-border/60 bg-card p-8 md:p-12">
           <h2 className="max-w-3xl font-display text-3xl md:text-5xl">
             Looking for a partner who can move at light speed without compromising on craft?
           </h2>

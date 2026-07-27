@@ -144,9 +144,9 @@ function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-24">
+      <section className="mx-auto max-w-7xl px-6 pb-10">
         <FadeIn>
-          <div className="rounded-[2rem] border border-border/60 bg-gradient-to-br from-card via-background to-card p-10 md:p-16">
+          <div className="rounded-[2rem] border border-border/60 bg-gradient-to-br from-card via-background to-card p-8 md:p-12">
             <h2 className="font-display text-4xl md:text-5xl">Let's build it together.</h2>
             <p className="mt-4 max-w-xl text-muted-foreground">
               Tell us about your goals and we'll outline a path from where you are to where you
