@@ -49,7 +49,17 @@ export function SiteFooter() {
       <div className="border-t border-border/60">
         <div className="mx-auto flex max-w-7xl flex-col gap-2 px-6 py-6 text-xs text-muted-foreground md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} Lumina Labs Limited. All rights reserved.</p>
-          <p>Illuminating the future of cloud.</p>
+          <p>
+            Made by{" "}
+            <a
+              href="https://consode.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground"
+            >
+              consode
+            </a>
+          </p>
         </div>
       </div>
     </footer>
