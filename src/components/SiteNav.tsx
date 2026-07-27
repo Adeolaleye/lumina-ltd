@@ -17,11 +17,11 @@ export function SiteNav() {
   const [open, setOpen] = useState(false);
   return (
     <header className="fixed top-0 z-50 w-full">
-      <div className="mx-auto mt-4 flex max-w-7xl items-center justify-between rounded-2xl border border-border/60 bg-background/60 px-5 py-3 backdrop-blur-xl md:mt-6">
-        <Link to="/" className="flex items-center gap-3 font-display text-xl">
-          <span className="relative inline-flex h-20 w-20 items-center justify-center">
+      <div className="mx-auto mt-3 flex max-w-7xl items-center justify-between rounded-2xl border border-border/60 bg-background/60 px-5 py-2 backdrop-blur-xl md:mt-4">
+        <Link to="/" className="flex items-center gap-2 font-display text-xl">
+          <span className="relative inline-flex h-12 w-12 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-primary/20 blur-md" />
-            <img src={logo.url} alt="Lumina logo" className="relative h-20 w-20 object-contain" />
+            <img src={LOGO_SRC} alt="Lumina logo" className="relative h-12 w-12 object-contain" />
           </span>
 
           <span className="tracking-tight">Lumina</span>
