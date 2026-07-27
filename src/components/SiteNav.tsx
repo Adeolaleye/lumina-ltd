@@ -1,8 +1,9 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/lumina-logo.png.asset.json";
 import { ThemeToggle } from "./ThemeToggle";
+
+const LOGO_SRC = "/favicon.png";
 
 
 const links = [
