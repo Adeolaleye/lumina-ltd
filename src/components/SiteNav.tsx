@@ -21,7 +21,7 @@ export function SiteNav() {
         <Link to="/" className="flex items-center gap-3 font-display text-xl">
           <span className="relative inline-flex h-20 w-20 items-center justify-center">
             <span className="absolute inset-0 rounded-full bg-primary/20 blur-md" />
-            <img src={LOGO_SRC} alt="Lumina logo" className="relative h-20 w-20 object-contain" />
+            <img src={LOGO_SRC} alt="Lumina - Cloud-native technology partner" className="relative h-20 w-20 object-contain" />
           </span>
 
           <span className="tracking-tight">Lumina</span>
