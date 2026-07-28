@@ -12,7 +12,7 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <Link to="/" className="flex items-center gap-3 font-display text-2xl">
             <span className="inline-flex h-20 w-20 items-center justify-center">
-              <img src={LOGO_SRC} alt="Lumina logo" className="h-20 w-20 object-contain" />
+              <img src={LOGO_SRC} alt="Lumina - Cloud-native technology partner" className="h-20 w-20 object-contain" />
             </span>
             Lumina
           </Link>
