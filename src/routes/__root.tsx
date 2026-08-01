@@ -79,6 +79,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Lumina - Cloud-native technology partner" },
       { name: "description", content: "Lumina helps businesses transform, modernize, and scale with cloud migration, application development, and data analytics." },
       { name: "author", content: "Lumina Labs Limited" },
+      { name: "google-site-verification", content: "QuVX8noRhJrtaS_Z_G2-0PmhLh5PEzbMz2tOIzmxYgc" },
       { property: "og:site_name", content: "Lumina" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
