@@ -17,9 +17,9 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Lumina is a cloud migration company delivering cloud-native solutions, infrastructure modernization, cloud security services, DevOps, ICT training, and digital transformation across Nigeria and beyond." },
       { property: "og:title", content: "Lumina - Cloud Migration & Cloud-Native Solutions" },
       { property: "og:description", content: "Cloud migration, cloud-native application development, IT security, ICT capacity building, and IT consulting - built to scale." },
-      { property: "og:url", content: "/" },
+      { property: "og:url", content: "https://www.luminalabsltd.com/" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://www.luminalabsltd.com/" }],
   }),
   component: Home,
 });

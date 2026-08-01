@@ -7,9 +7,9 @@ export const Route = createFileRoute("/about")({
       { name: "description", content: "Lumina is a cloud-native technology company empowering digital transformation through innovative, secure, and intelligent applications." },
       { property: "og:title", content: "About - Lumina" },
       { property: "og:description", content: "Our mission, vision, and the values that guide how we build with our clients." },
-      { property: "og:url", content: "/about" },
+      { property: "og:url", content: "https://www.luminalabsltd.com/about" },
     ],
-    links: [{ rel: "canonical", href: "/about" }],
+    links: [{ rel: "canonical", href: "https://www.luminalabsltd.com/about" }],
   }),
   component: AboutPage,
 });

@@ -10,9 +10,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Talk to Lumina about cloud migration, cloud-native development, IT security, ICT training, and consulting. Email contact@luminalabsltd.com." },
       { property: "og:title", content: "Contact - Lumina" },
       { property: "og:description", content: "Start a conversation with Lumina about your cloud transformation." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://www.luminalabsltd.com/contact" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://www.luminalabsltd.com/contact" }],
   }),
   component: ContactPage,
 });

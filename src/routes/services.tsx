@@ -14,9 +14,9 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Cloud migration company delivering cloud-native solutions, infrastructure modernization, cloud security services, IT consulting, ICT training, DevOps, and scalable cloud architecture." },
       { property: "og:title", content: "Services - Lumina" },
       { property: "og:description", content: "Cloud migration, cloud-native development, IT security, ICT capacity building, and IT consulting from Lumina." },
-      { property: "og:url", content: "/services" },
+      { property: "og:url", content: "https://www.luminalabsltd.com/services" },
     ],
-    links: [{ rel: "canonical", href: "/services" }],
+    links: [{ rel: "canonical", href: "https://www.luminalabsltd.com/services" }],
   }),
   component: ServicesPage,
 });
